@@ -2,6 +2,7 @@ import React from 'react';
 import "./topbar.css"
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import MessageRoundedIcon from '@mui/icons-material/MessageRounded';
+import SettingsIcon from '@mui/icons-material/Settings';
 export default function Topbar() {
   return (
     <div className='topbar'>
@@ -21,8 +22,8 @@ export default function Topbar() {
             </div>
 
             <div className='topbarIconContainer'>
-                <NotificationsNoneIcon />
-                <span className='topIconBadge'>2</span>
+                <SettingsIcon />
+               
             </div>
     <img src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className='topAvatar'></img>
         </div>
