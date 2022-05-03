@@ -32,6 +32,7 @@ export default function UserDropdown() {
         onClose={handleClose}
         MenuListProps={{
           'aria-labelledby': 'basic-button',
+          color:'white'
         }}
       >
         <MenuItem onClick={handleClose}>My Profile</MenuItem>

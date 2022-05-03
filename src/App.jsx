@@ -2,7 +2,7 @@
 // import Topbar from "./components/topbar/Topbar";
 // import "./app.css"
 // import Box from '@mui/material/Box';
-// import { useState } from 'react'
+
 // import * as React from 'react';
 // import { styled, useTheme } from '@mui/material/styles';
 // import MuiDrawer from '@mui/material/Drawer';
@@ -57,7 +57,7 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import Drawer from '@material-ui/core/Drawer'
 import Container from '@material-ui/core/Container'
 import Typography from '@material-ui/core/Typography'
-
+import { useState } from 'react'
 import AppMenu from './AppMenu'
 import Topbar from './components/topbar/Topbar';
 
@@ -68,11 +68,11 @@ const PageReports = () => <Typography variant="h3" component="h1">Reports Page</
 
 const App = () => {
   
-
+  
   const classes = useStyles()
+    const [open, setOpen] = useState(false);
 
   return (
-
 
     
     <BrowserRouter>
@@ -83,12 +83,13 @@ const App = () => {
           classes={{
             paper: classes.drawerPaper,
           }}
+          open={open}
         >
         
-          <AppMenu />
+          <AppMenu open={open} setOpen={setOpen}/>
          
         </Drawer>
-        <Topbar  />
+        <Topbar  open={open} setOpen={setOpen} />
        
 
 
@@ -107,33 +108,28 @@ const App = () => {
         </main>
       </div>
     </BrowserRouter>
+
   )
 }
 
-const drawerWidth = 240
+const drawerWidth = 230
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    display: 'flex',
-  },
+  
   drawerPaper: {
-    position: 'relative',
-    whiteSpace: 'nowrap',
+    position: 'fixed',
+    BorderRight:'1px solid transparent',
     width: drawerWidth,
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4),
-    background: '#535454',
+   
+    background: '#34444c',
     color: '#fff',
+    zIndex:'1001',
+    transition:'all 0.2s ease-in-out 0s',
+    bottom:'0',
+    marginTop:'0',
+    left:'0'
   },
-  content: {
-    flexGrow: 1,
-    height: '100vh',
-    overflow: 'auto',
-  },
-  container: {
-    paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4),
-  },
+  
 }))
 
 export default App
