@@ -37,9 +37,11 @@ const appMenuItems = [
     items: [
       {
         name: 'Admin Dashboard',
+        link: '/admindashboard',
       },
       {
         name: ' Employee Dashboard',
+        link: '/employeedashboard',
       
       },
     ],
@@ -52,25 +54,31 @@ const appMenuItems = [
     items: [
       {
         name: 'Chart',
+        link: '/chart',
       },
       {
         name: ' Calls',
+        link: '/calls',
       
       },
       {
         name: ' Calendar',
+        link: '/calendar',
       
       },
       {
         name: ' Contacts',
+        link: '/contacts',
       
       },
       {
         name: ' Email',
+        link: '/email',
       
       },
       {
         name: ' File Manager',
+        link: '/file manaer',
       
       },
     ],
@@ -82,49 +90,65 @@ const appMenuItems = [
     items: [
       {
         name: 'All Employees',
+        link: '/all employes',
       },
       {
         name: ' Holidays',
+        link: '/holidays',
       
       },
       {
         name: 'Leaves(Admin)',
+        link: '/leaves(admin)',
       
       },
       {
-        name: 'Leaves(Employee)',
+        name: 'Leaves(Employee)', 
+        link: '/leaves(employes)',
+
       
       },
       {
         name: ' Leave Settings',
+        link: '/leave settings',
       
       },
       {
         name: ' Attendance(Admin) ',
+        link: '/Attendance(Admin)',
       
       },
       {
         name: ' Attendance(Employee) ',
+        link: '/Attendance(employee)',
+
+        
       
       },
       {
         name: ' Departments ',
+         link: '/Departments',
+
       
       },
       {
         name: ' Designations ',
+        link: '/designations',
       
       },
       {
         name: ' Timesheet ',
+        link: '/timesheet',
       
       },
       {
         name: ' Shift & Schedule ',
+        link: '/shift&schedule',
       
       },
       {
         name: ' Overtime ',
+        link: '/overtime',
       
       },
       
@@ -144,13 +168,16 @@ const appMenuItems = [
     items: [
       {
         name: ' Projects',
+        link: 'projects',
       },
       {
         name: 'Tasks',
+        link: '/tasks',
       
       },
       {
         name: 'Tasks Board',
+        link: '/tasksboard',
       
       },
     ],
@@ -171,25 +198,30 @@ const appMenuItems = [
     items: [
       {
         name: ' Estimates',
+        link: '/estimates',
       },
       {
         name: 'Invoices',
-      
+        link: '/invoice',
       },
       {
         name: 'Payments ',
+        link: '/payments',
       
       },
       {
         name: 'Expenses ',
+        link: 'expenses',
       
       },
       {
         name: 'Provident Fund ',
+        link: 'providentfund',
       
       },
       {
         name: 'Taxes ',
+        link: '/taxes',
       
       },
     ],
@@ -200,17 +232,21 @@ const appMenuItems = [
     items: [
       {
         name: ' Categories',
+        link: '/categories',
       },
       {
         name: 'Budgets',
+        link: '/budgets',
       
       },
       {
         name: 'Budget Expenses ',
+        link: '/budgetexpenses',
       
       },
       {
         name: 'Budget Revenues ',
+        link: '/budgetrevenues',
       
       },
      
@@ -222,13 +258,16 @@ const appMenuItems = [
     items: [
       {
         name: ' Employees Salary',
+        link: '/employees salary',
       },
       {
         name: 'Payslip',
+        link: '/payslip',
       
       },
       {
         name: 'Payroll Items',
+        link: '/Attendance(employee)',
       
       },
       
@@ -246,45 +285,57 @@ const appMenuItems = [
     items: [
       {
         name: ' Expense Rport',
+        link: '/expensereport',
       },
       {
         name: 'Invoice Report',
+        link: '/invoicereport',
       
       },
       {
         name: 'Project Report ',
+        link: '/projectreport',
       
       },
       {
-        name: 'Payments Report ',
+        name: 'Payments Report ', 
+        link: '/paymentsreport',
+
       
       },
       {
         name: 'Task Report ',
+        link: '/taskreport',
       
       },
       {
         name: 'User Report ',
+        link: '/userreport',
       
       },
       {
         name: 'Employee Report ',
+        link: '/employeereport',
       
       },
       {
         name: 'Payslip Report ',
+        link: '/payslipreport',
       
       },
       {
         name: 'Attendance Report ',
+        link: '/attendancereport',
       
       },
       {
         name: 'Leave Report ',
+        link: '/leavereport',
       
       },
       {
         name: 'Daily Report ',
+        link: '/dailyreport',
       
       },
      
@@ -297,14 +348,16 @@ const appMenuItems = [
     items: [
       {
         name: ' Performance Indicater',
+        link: '/performanceindicater',
       },
       {
         name: 'Performance Review',
+        link: '/performancereview',
       
       },
       {
         name: 'Performance Appraisal ',
-      
+        link: '/performanceappraisal',
       },
     ],
   },
@@ -314,9 +367,11 @@ const appMenuItems = [
     items: [
       {
         name: 'Goal List',
+        link: '/goalslist',
       },
       {
         name: 'Goal Type',
+        link: '/goaltype',
       
       },
       
@@ -331,13 +386,16 @@ const appMenuItems = [
     items: [
       {
         name: ' Training List',
+        link: '/trainiglist',
       },
       {
         name: 'Trainers',
+        link: '/trainers',
       
       },
       {
         name: 'Training Type',
+        link: '/trainingtype',
       
       },
       
@@ -370,41 +428,52 @@ const appMenuItems = [
     items: [
       {
         name: 'User Dashboard',
+        link: '/userdashboard',
       },
       {
         name: 'jobs Dashboard',
+        link: 'jobsdashboard',
       
       },
       {
         name: 'Manage Jobs',
+        link: '/managejobs',
       },
       {
-        name: ' Managen Resumes',
+        name: ' Manage Resumes',
+        link: '/manage',
       
       },
       {
         name: 'Shortlist Candidates',
+        link: '/shortlistcandidates',
       },
       {
         name: 'Interview Questions ',
+        link: '/interviewquestions',
       
       },
       {
         name: 'Offer Approvals',
+        link: '/offerapprovals',
       },
       {
         name: 'Experience Level',
+        link: '/experiencelevel',
       
       },
       {
         name: 'Candidater List',
+        link: '/candidater list',
       },
       {
         name: 'Schedule timing',
+        link: '/scheduletiming',
       
       },
       {
         name: 'Aptitude Result',
+        link: 'aptituderesult ',
       },
       
       
@@ -454,20 +523,24 @@ const appMenuItems = [
     items: [
       {
         name: 'Login',
+        link: '/login',
       },
       {
         name: 'Register',
+        link: '/register',
       
       },
       {
         name: 'Forget Password',
+        link: '/forgetpassword',
       },
       {
         name: 'OTP',
-      
+        link: '/otp',
       },
       {
         name: 'Lock Screen',
+        link: '/lockscreen',
       },
       
    
@@ -480,9 +553,11 @@ const appMenuItems = [
     items: [
       {
         name: '404 Error',
+        link: '/404error ',
       },
       {
         name: '500 Error',
+        link: '/500error',
       
       },
    
@@ -495,13 +570,16 @@ const appMenuItems = [
     items: [
       {
         name: 'Subscriptions(Admin)',
+        link: '/subscriptions(admin)',
       },
       {
         name: 'Subscriptions(Company)',
+        link: '/subscriptions(company)',
       
       },
       {
         name: ' Subscriptions Companies',
+        link: '/subscriptioncompanies',
       },
      
     ],
@@ -513,19 +591,24 @@ const appMenuItems = [
     items: [
       {
         name: 'Search',
+        link: '/search',
       },
       {
         name: 'FAQ',
+        link: '/faq',
       
       },
       {
         name: ' Terms',
+        link: '/terms',
       },
       {
         name: ' Privacy Policy',
+        link: '/privacy policy',
       },
       {
         name: ' Blank  Page',
+        link: '/blanckpage',
       },
     ],
     
@@ -572,9 +655,11 @@ const appMenuItems = [
     items: [
       {
         name: 'Basics Tables',
+        link: '/basicstables',
       },
       {
         name: 'Data Table',
+        link: '/datatable',
       
       },
    
