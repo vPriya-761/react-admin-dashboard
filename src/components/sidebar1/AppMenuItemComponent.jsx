@@ -16,11 +16,14 @@ const AppMenuItemComponent = props => {
         children={children}
         onClick={onClick}
       />
+
+      
     )
   }
 
   // Return a LitItem with a link component
   return (
+    
     <ListItem
       button
       className={className}

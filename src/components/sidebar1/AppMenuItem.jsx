@@ -13,7 +13,6 @@ import Collapse from '@material-ui/core/Collapse'
 
 import IconExpandLess from '@material-ui/icons/ExpandLess'
 import IconExpandMore from '@material-ui/icons/ExpandMore'
-
 import AppMenuItemComponent from './AppMenuItemComponent'
 
 // React runtime PropTypes
