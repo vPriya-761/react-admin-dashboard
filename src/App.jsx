@@ -60,46 +60,34 @@ import Typography from '@material-ui/core/Typography'
 import { useState } from 'react'
 import AppMenu from './components/sidebar1/AppMenu'
 import Topbar from './components/topbar/Topbar';
+import { Link } from "react-router-dom";
+import AdminDashboard from './components/AdminDashboard/AdminDashboard'
+import EmployeeDashboard from './components/EmployeeDashboard/EmployeeDashboard'
+import { Chat } from '@material-ui/icons'
+import { Calls } from './components/Applications/Calls'
+import Calendar from './components/Applications/Calendar'
+import { Email } from './components/Applications/Email'
+import { FileManager } from './components/Applications/FileManager'
+import { Contacts } from './components/Applications/Contacts'
+import { Holidays } from './components/Employees/Holidays'
+import { LeavesAdmin } from './components/Employees/LeaveAdmin'
+import { LeavesEmployee } from './components/Employees/LeavesEmployee'
+import { LeaveSettings } from './components/Employees/LeaveSettings'
+import { Departments } from './components/Employees/Demartments'
+import { Designations } from './components/Employees/Designations'
+import { Timesheet } from './components/Employees/Timesheet'
+import { ShiftAndSchedule } from './components/Employees/ShiftAndSchedule'
+import { Overtime } from './components/Employees/Overtime'
+import { UserDashboard } from './components/Jobs/UserDashboard'
+import { JobsDashboard } from './components/Jobs/jobsDashboard'
+import { AllEmployees } from './components/Employees/AllEmployees'
+import { Categories } from './components/Accounting/Categories'
+import { BudgetExpenses } from './components/Accounting/BudgetExpenses'
+import { BudgetRevenues } from './components/Accounting/BudgetRevenues'
+import { Budgets } from './components/Accounting/Budgets'
+import { AttendanceAdmin } from './components/Employees/AttendanceAdmin'
+import { AttendanceEmployee } from './components/Employees/AttendanceEmployee'
 
-//const PageDashboard = () => <Typography variant="h3" component="h1">Dashboard Page</Typography>
-const PageDashboard1 = () => <Typography variant="h3" component="h1">Dashboard Page</Typography>
-const PageApps =() => <Typography vatiant = "h3" component="h1">PageApp</Typography>
-const PageEmployees = () => <Typography variant="h3" component="h1">Employes Page</Typography>
-const PageClients = () => <Typography variant="h3" component="h1">Customers Page</Typography>
-const PageProjects = () => <Typography variant="h3" component="h1">Project page</Typography>
-
-const PageLeads = () => <Typography variant="h3" component="h1">Leads Page</Typography>
-const PageTickets = () => <Typography variant="h3" component="h1">Tickets Page</Typography>
-const PageSales = () => <Typography variant="h3" component="h1">Sales Page</Typography>
-const PageAccounting = () => <Typography variant="h3" component="h1">Accounting Page</Typography>
-const PagePayroll = () => <Typography variant="h3" component="h1">Payroll Page</Typography>
-const PagePolicies = () => <Typography variant="h3" component="h1">Polices Page</Typography>
-
-const PageReports = () => <Typography variant="h3" component="h1">Reports Page</Typography>
-const PagePerformance = () => <Typography variant="h3" component="h1">Performance Page</Typography>
-const PageGoals = () => <Typography variant="h3" component="h1">Goals Page</Typography>
-const PageTraining = () => <Typography variant="h3" component="h1">Training Page</Typography>
-const PagePromotion = () => <Typography variant="h3" component="h1">Promotion Page</Typography>
-const PageResignation = () => <Typography variant="h3" component="h1">Resignation Page</Typography>
-const PageTermination = () => <Typography variant="h3" component="h1">Termination Page</Typography>
-
-const PageJobs = () => <Typography variant="h3" component="h1">Jobs</Typography>
-const PageKnowledgebase = () => <Typography variant="h3" component="h1">Knowledgebase</Typography>
-const PageActivities = () => <Typography variant="h3" component="h1">Activities</Typography>
-const PageUsers = () => <Typography variant="h3" component="h1">Users</Typography>
-const PageSettings = () => <Typography variant="h3" component="h1">Settings</Typography>
-const PageProfile = () => <Typography variant="h3" component="h1">Profile</Typography>
-const PageAuthentication = () => <Typography variant="h3" component="h1">Authentication</Typography>
-
-const PageErrorPages = () => <Typography variant="h3" component="h1">ErrorPages </Typography>
-const PageSubscriptions = () => <Typography variant="h3" component="h1">Subscriptions</Typography>
-const PagePages = () => <Typography variant="h3" component="h1">Pages</Typography>
-const PageComponents= () => <Typography variant="h3" component="h1">Components</Typography>
-
-const PageForms = () => <Typography variant="h3" component="h1">Forms</Typography>
-const PageTables = () => <Typography variant="h3" component="h1">Tables </Typography>
-const PageDocumentation = () => <Typography variant="h3" component="h1">Documentation</Typography>
-const PageChangeLog= () => <Typography variant="h3" component="h1">ChangeLog</Typography>
 
 
 const App = () => { 
@@ -134,46 +122,99 @@ const App = () => {
           <Container maxWidth="lg" className={classes.container}>
 
             <Routes>
-              <Route path="/" exact component={PageDashboard1} />
+             
+        <Route path="/" element={<AdminDashboard/>} />
+        <Route path="employeedashboard" element={<EmployeeDashboard />} />
+        {/*Applications */}
+        <Route path="chat" element={<Chat />} />
+        <Route path="calls" element={<Calls />} />
+        <Route path="calender" element={<Calendar />} />
+        <Route path="email" element={<Email />} />
+        <Route path="filemanager" element={<FileManager />} />
+        <Route path="contacts" element={<Contacts />} />
 
-              <Route path="/apps" component={PageApps} />
-              <Route path="/employees" component={PageEmployees} />
-              <Route path="/clients" component={PageClients} />
-              <Route path="/projects" component={PageProjects} />
-              <Route path="/leads" component={PageLeads} />
-              <Route path="/tickets" component={PageTickets} />
-              <Route path="/sales" component={PageSales} />
-              <Route path="/accounting" component={PageAccounting} />
-              <Route path="/payroll" component={PagePayroll} />
-              <Route path="/policies" component={PagePolicies} />
-              <Route path="/reports" component={PageReports} />
-              <Route path="/performance" component={PagePerformance} />
-              <Route path="/goals" component={PageGoals} />
-              <Route path="/training" component={PageTraining} />
-              <Route path="/promotion" component={PagePromotion} />
-              <Route path="/resignation" component={PageResignation} />
-              <Route path="/termination" component={PageTermination} />
+        {/*Employees*/}
+        <Route path="allemployees" element={<AllEmployees />} />
+        <Route path="holidays" element={<Holidays />} />
+        <Route path="leavesAdmin" element={<LeavesAdmin />} />
+        <Route path="leavesEmployee" element={<LeavesEmployee />} />
+        <Route path="leaveSettings" element={<LeaveSettings />} />
+        <Route path="attendanceAdmin" element={<AttendanceAdmin />} />
+        <Route path="attendanceEmployee" element={<AttendanceEmployee />} />
+        <Route path="departments" element={<Departments />} />
+        <Route path="designations" element={<Designations />} />
+        <Route path="timesheet" element={<Timesheet />} />
+        <Route path="shiftAndSchedule" element={<ShiftAndSchedule />} />
+        <Route path="overtime" element={<Overtime />} />
 
-              <Route path="/jobs" component={PageJobs} />
-              <Route path="/knowledgebase" component={PageKnowledgebase} />
-              <Route path="/activities" component={PageActivities} />
-              <Route path="/users" component={PageUsers} />
-              <Route path="/settings" component={PageSettings} />
-              <Route path="/profile" component={PageProfile} />
-              <Route path="/authentication" component={PageAuthentication} />
-              <Route path="/errorpages" component={PageErrorPages} />
+        {/*Projects */}
+        {/* <Route path="projects" element={<Projects />} />
+        <Route path="tasks" element={<Tasks />} />
+        <Route path="taskBoard" element={<TaskBoard />} /> */}
 
-              <Route path="/subscription" component={PageSubscriptions} />
-              <Route path="/pages" component={PagePages} />
-              <Route path="/components" component={PageComponents} />
-              <Route path="/form" component={PageForms} />
-              <Route path="/tables" component={PageTables} />
-              <Route path="/documentation" component={PageDocumentation} />
-              <Route path="/changelog" component={PageChangeLog} />
+        {/*Sales*/}
+        {/* <Route path="estimates" element={<Estimates />} />
+        <Route path="invoices" element={<Invoices />} />
+        <Route path="payments" element={<Payments />} />
+        <Route path="expenses" element={<Expenses />} />
+        <Route path="providentFund" element={<ProvidentFund />} />
+        <Route path="taxes" element={<Taxes />} /> */}
 
+        {/*Accounting*/}
+        <Route path="categories" element={<Categories />} />
+        <Route path="budgets" element={<BudgetExpenses />} />
+        <Route path="budgetExpenses" element={<BudgetRevenues />} />
+        <Route path="budgetRevenues" element={<Budgets />} />
+
+        {/*Payroll*/}
+        {/* <Route path="employeeSalary" element={<EmployeeSalary />} />
+        <Route path="payslip" element={<Payslip />} />
+        <Route path="payrollItems" element={<PayrollItems />} /> */}
+
+        {/*Reports*/}
+        {/* <Route path="expenseReport" element={<ExpenseReport />} />
+        <Route path="invoiceReport" element={<InvoiceReport />} />
+        <Route path="paymentsReport" element={<PaymentsReport />} />
+        <Route path="projectReport" element={<ProjectReport />} />
+        <Route path="taskReport" element={<TaskReport />} />
+        <Route path="userReport" element={<UserReport />} />
+        <Route path="employeeReport" element={<EmployeeReport />} />
+        <Route path="payslipReport" element={<PayslipReport />} />
+        <Route path="attendanceReport" element={<AttendanceReport />} />
+        <Route path="leaveReport" element={<LeaveReport />} />
+        <Route path="dailyReport" element={<DailyReport />} /> */}
+
+        {/*Performance*/}
+        {/* <Route path="performanceIndicator" element={<PerformanceIndicator />} />
+        <Route path="performanceReview" element={<PerformanceReview />} />
+        <Route path="performanceAppraisal" element={<PerformanceAppraisal />} /> */}
+
+        {/*Goals*/}
+        {/* <Route path="goalList" element={<GoalList />} />
+        <Route path="goalType" element={<GoalType />} /> */}
+
+        {/*Training*/}
+        {/* <Route path="trainingList" element={<TrainingList />} />
+        <Route path="trainers" element={<Trainers />} />
+        <Route path="trainingType" element={<TrainingType />} /> */}
+
+        {/*Jobs*/}
+        {/* <Route path="userDashboard" element={<UserDashboard />}/>
+        <Route path="jobsDashboard" element={<JobsDashboard />}/>
+        <Route path="manageJobs" element={<ManageJo />}/>
+        <Route path="manageResumes" element={<ManageResumes />}/>
+        <Route path="shortlistCandidates" element={<ShortlistCandidates />}/>
+        <Route path="interviewQuestions" element={<InterviewQuestions />}/>
+        <Route path="offerApprovals" element={<OfferApprovals />}/>
+        <Route path="experienceLevel" element={<ExperienceLevel />}/>
+        <Route path="candidatesList" element={<CandidatesList />}/>
+        <Route path="scheduleTiming" element={<ScheduleTiming />}/>
+        <Route path="aptitudeResults" element={<AptitudeResults />}/> */}
             </Routes>
 
           </Container>
+          <div className={classes.scrollbar}></div>
+
         </main>
       </div>
     </BrowserRouter>
@@ -203,7 +244,18 @@ const useStyles = makeStyles(theme => ({
     left:'0',
     overflowY:'scroll',
     maxHeight: 'class(100vh-9rem)'
+
   },
+  scrollBar:{
+    position:'relative',
+    display: 'block',
+    width:'100%',
+    cursor:'pointer',
+    BorderRadius:'inherit',
+BackgroundColor:"rgba(0,0,0,0.2)",
+height: '30px',
+transform:'translatey(178.083px)'
+  }
   
 }))
 

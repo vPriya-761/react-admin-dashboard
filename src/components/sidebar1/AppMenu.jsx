@@ -5,11 +5,38 @@ import { styled, useTheme } from '@mui/material/styles';
 
 import List from '@material-ui/core/List'
 
-import IconDashboard from '@material-ui/icons/Dashboard'
-import IconShoppingCart from '@material-ui/icons/ShoppingCart'
-import IconPeople from '@material-ui/icons/People'
-import IconBarChart from '@material-ui/icons/BarChart'
-import IconLibraryBooks from '@material-ui/icons/LibraryBooks'
+import DashboardCustomizeOutlinedIcon from '@mui/icons-material/DashboardCustomizeOutlined';
+import ViewInArOutlinedIcon from '@mui/icons-material/ViewInArOutlined';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
+import RocketLaunchOutlinedIcon from '@mui/icons-material/RocketLaunchOutlined';
+import ConfirmationNumberOutlinedIcon from '@mui/icons-material/ConfirmationNumberOutlined';
+import FileCopyOutlinedIcon from '@mui/icons-material/FileCopyOutlined';
+import CurrencyRupeeOutlinedIcon from '@mui/icons-material/CurrencyRupeeOutlined';
+import PolicyOutlinedIcon from '@mui/icons-material/PolicyOutlined';
+import PieChartOutlinedIcon from '@mui/icons-material/PieChartOutlined';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import DonutLargeOutlinedIcon from '@mui/icons-material/DonutLargeOutlined';
+import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined';
+import CampaignOutlinedIcon from '@mui/icons-material/CampaignOutlined';
+import AppRegistrationOutlinedIcon from '@mui/icons-material/AppRegistrationOutlined';
+import HighlightOffOutlinedIcon from '@mui/icons-material/HighlightOffOutlined';
+import AddCardOutlinedIcon from '@mui/icons-material/AddCardOutlined';
+import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
+import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
+import GroupAddOutlinedIcon from '@mui/icons-material/GroupAddOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
+import KeyOutlinedIcon from '@mui/icons-material/KeyOutlined';
+import WarningAmberOutlinedIcon from '@mui/icons-material/WarningAmberOutlined';
+import SwipeLeftOutlinedIcon from '@mui/icons-material/SwipeLeftOutlined';
+import ViewColumnOutlinedIcon from '@mui/icons-material/ViewColumnOutlined';
+import ExtensionOutlinedIcon from '@mui/icons-material/ExtensionOutlined';
+import DynamicFormOutlinedIcon from '@mui/icons-material/DynamicFormOutlined';
+import TableChartOutlinedIcon from '@mui/icons-material/TableChartOutlined';
+import DocumentScannerOutlinedIcon from '@mui/icons-material/DocumentScannerOutlined';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 
 import AppMenuItem from './AppMenuItem'
 
@@ -17,7 +44,7 @@ const appMenuItems = [
   {
     name: 'Dashboard',
    
-    Icon: IconDashboard,
+    Icon: FileCopyOutlinedIcon,
     items: [
       {
         name: 'Level 2',
@@ -33,7 +60,7 @@ const appMenuItems = [
   {
     name: 'Dashboard',
    
-    Icon: IconShoppingCart,
+    Icon: DashboardCustomizeOutlinedIcon,
     items: [
       {
         name: 'Admin Dashboard',
@@ -50,7 +77,7 @@ const appMenuItems = [
   {
     name: 'Apps',
   
-    Icon: IconBarChart,
+    Icon: ViewInArOutlinedIcon,
     items: [
       {
         name: 'Chart',
@@ -86,7 +113,7 @@ const appMenuItems = [
   {
     name: 'Employees',
     
-    Icon: IconPeople,
+    Icon: PersonOutlineOutlinedIcon,
     items: [
       {
         name: 'All Employees',
@@ -158,13 +185,13 @@ const appMenuItems = [
   {
     name: 'Clients',
     link: '/clients',
-    Icon: IconBarChart,
+    Icon: GroupOutlinedIcon,
   },
  
 
   {
     name: 'Projects',
-    Icon: IconLibraryBooks,
+    Icon: RocketLaunchOutlinedIcon,
     items: [
       {
         name: ' Projects',
@@ -185,16 +212,16 @@ const appMenuItems = [
   {
     name: 'Leads',
     link: '/leads',
-    Icon: IconBarChart,
+    Icon: PersonOutlineOutlinedIcon,
   },
   {
     name: 'Tickets',
     link: '/tickets',
-    Icon: IconBarChart,
+    Icon: ConfirmationNumberOutlinedIcon,
   },
   {
     name: 'Sales',
-    Icon: IconLibraryBooks,
+    Icon: FileCopyOutlinedIcon,
     items: [
       {
         name: ' Estimates',
@@ -228,7 +255,7 @@ const appMenuItems = [
   },
   {
     name: 'Accounting',
-    Icon: IconLibraryBooks,
+    Icon: FileCopyOutlinedIcon,
     items: [
       {
         name: ' Categories',
@@ -254,7 +281,7 @@ const appMenuItems = [
   },
   {
     name: 'Payroll',
-    Icon: IconLibraryBooks,
+    Icon: CurrencyRupeeOutlinedIcon,
     items: [
       {
         name: ' Employees Salary',
@@ -277,11 +304,11 @@ const appMenuItems = [
   {
     name: 'Policies',
     link: '/policies',
-    Icon: IconBarChart,
+    Icon: PolicyOutlinedIcon,
   },
   {
     name: 'Reports',
-    Icon: IconLibraryBooks,
+    Icon: PieChartOutlinedIcon,
     items: [
       {
         name: ' Expense Rport',
@@ -344,7 +371,7 @@ const appMenuItems = [
 
   {
     name: 'Performance',
-    Icon: IconLibraryBooks,
+    Icon: SchoolOutlinedIcon,
     items: [
       {
         name: ' Performance Indicater',
@@ -363,7 +390,7 @@ const appMenuItems = [
   },
   {
     name: 'Goals',
-    Icon: IconLibraryBooks,
+    Icon: DonutLargeOutlinedIcon,
     items: [
       {
         name: 'Goal List',
@@ -382,7 +409,7 @@ const appMenuItems = [
   },
   {
     name: 'Training',
-    Icon: IconLibraryBooks,
+    Icon: ModeEditOutlineOutlinedIcon,
     items: [
       {
         name: ' Training List',
@@ -405,26 +432,26 @@ const appMenuItems = [
   {
     name: 'Promotion',
     link: '/promation',
-    Icon: IconBarChart,
+    Icon: CampaignOutlinedIcon,
   },
   {
     name: 'Resignation',
     link: '/resignation',
-    Icon: IconBarChart,
+    Icon: AppRegistrationOutlinedIcon,
   },
   {
     name: 'Termination',
     link: '/termination',
-    Icon: IconBarChart,
+    Icon: HighlightOffOutlinedIcon,
   },
   {
     name: 'Assets',
     link: '/termination',
-    Icon: IconBarChart,
+    Icon: AddCardOutlinedIcon,
   },
   {
     name: 'Jobs',
-    Icon: IconLibraryBooks,
+    Icon: BusinessCenterOutlinedIcon,
     items: [
       {
         name: 'User Dashboard',
@@ -484,26 +511,26 @@ const appMenuItems = [
   {
     name: 'Knowledgebase',
     link: '/knowledgebase',
-    Icon: IconBarChart,
+    Icon: QuestionMarkOutlinedIcon,
   },
   {
     name: 'Activities',
     link: '/activities',
-    Icon: IconBarChart,
+    Icon: NotificationsNoneOutlinedIcon,
   },
   {
     name: 'Users',
     link: '/users',
-    Icon: IconBarChart,
+    Icon: GroupAddOutlinedIcon,
   },
   {
     name: 'Settings',
     link: '/settings',
-    Icon: IconBarChart,
+    Icon: SettingsOutlinedIcon,
   },
   {
     name: 'Profile',
-    Icon: IconLibraryBooks,
+    Icon: PermIdentityOutlinedIcon,
     items: [
       {
         name: 'Employee Profile',
@@ -519,7 +546,7 @@ const appMenuItems = [
   
   {
     name: 'Authentication',
-    Icon: IconLibraryBooks,
+    Icon: KeyOutlinedIcon,
     items: [
       {
         name: 'Login',
@@ -549,7 +576,7 @@ const appMenuItems = [
   },
   {
     name: 'Error Pages',
-    Icon: IconLibraryBooks,
+    Icon: WarningAmberOutlinedIcon,
     items: [
       {
         name: '404 Error',
@@ -566,7 +593,7 @@ const appMenuItems = [
   },
   {
     name: 'Subscriptions',
-    Icon: IconLibraryBooks,
+    Icon: SwipeLeftOutlinedIcon,
     items: [
       {
         name: 'Subscriptions(Admin)',
@@ -587,7 +614,7 @@ const appMenuItems = [
   },
   {
     name: 'Pages',
-    Icon: IconLibraryBooks,
+    Icon: ViewColumnOutlinedIcon,
     items: [
       {
         name: 'Search',
@@ -616,13 +643,13 @@ const appMenuItems = [
   {
     name: 'Components',
     link: '/components',
-    Icon: IconBarChart,
+    Icon: ExtensionOutlinedIcon,
   },
 
   
   {
     name: 'Forms',
-    Icon: IconLibraryBooks,
+    Icon: DynamicFormOutlinedIcon,
     items: [
       {
         name: 'Basic Inputs',
@@ -651,7 +678,7 @@ const appMenuItems = [
   },
   {
     name: 'Tables',
-    Icon: IconLibraryBooks,
+    Icon: TableChartOutlinedIcon,
     items: [
       {
         name: 'Basics Tables',
@@ -669,12 +696,12 @@ const appMenuItems = [
   {
     name: 'Documentation',
     link: '/documentation',
-    Icon: IconBarChart,
+    Icon: DocumentScannerOutlinedIcon,
   },
   {
     name: 'Change Log',
     link: '/changelog',
-    Icon: IconBarChart,
+    Icon: InfoOutlinedIcon,
   },
   
 
@@ -748,6 +775,7 @@ const useStyles = makeStyles(theme =>
     },
     menuItemIcon: {
       color: '#97c05c',
+      
     },
   }),
 )
