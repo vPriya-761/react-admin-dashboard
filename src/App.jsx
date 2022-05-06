@@ -62,7 +62,7 @@ import AppMenu from './components/sidebar1/AppMenu'
 import Topbar from './components/topbar/Topbar';
 import { Link } from "react-router-dom";
 import AdminDashboard from './components/AdminDashboard/AdminDashboard'
-import EmployeeDashboard from './components/EmployeeDashboard/EmployeeDashboard'
+
 import { Chat } from '@material-ui/icons'
 import { Calls } from './components/Applications/Calls'
 import Calendar from './components/Applications/Calendar'
@@ -87,6 +87,7 @@ import { BudgetRevenues } from './components/Accounting/BudgetRevenues'
 import { Budgets } from './components/Accounting/Budgets'
 import { AttendanceAdmin } from './components/Employees/AttendanceAdmin'
 import { AttendanceEmployee } from './components/Employees/AttendanceEmployee'
+import { EmployeeDashboard } from './components/EmployeeDashboard/EmployeeDashboard'
 
 
 
@@ -124,7 +125,7 @@ const App = () => {
             <Routes>
              
         <Route path="/" element={<AdminDashboard/>} />
-        <Route path="employeedashboard" element={<EmployeeDashboard />} />
+        <Route path="employeedashboard" element={<EmployeeDashboard/>} />
         {/*Applications */}
         <Route path="chat" element={<Chat />} />
         <Route path="calls" element={<Calls />} />
